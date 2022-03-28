@@ -1,13 +1,13 @@
 const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
-const ObjectId = require('mongodb').ObjectId
+const { ObjectId } = require('mongodb')
 
 module.exports = {
   query,
   getById,
   getByUsername,
-  remove,
-  update,
+  // remove,
+  // update,
   add,
 }
 
@@ -38,6 +38,7 @@ async function getById(userId) {
     throw err
   }
 }
+
 async function getByUsername(username) {
   try {
     const collection = await dbService.getCollection('user')
@@ -49,33 +50,33 @@ async function getByUsername(username) {
   }
 }
 
-async function remove(userId) {
-  try {
-    const collection = await dbService.getCollection('user')
-    await collection.deleteOne({ _id: ObjectId(userId) })
-  } catch (err) {
-    logger.error(`cannot remove user ${userId}`, err)
-    throw err
-  }
-}
+// async function remove(userId) {
+//   try {
+//     const collection = await dbService.getCollection('user')
+//     await collection.deleteOne({ _id: ObjectId(userId) })
+//   } catch (err) {
+//     logger.error(`cannot remove user ${userId}`, err)
+//     throw err
+//   }
+// }
 
-async function update(user) {
-  try {
-    // peek only updatable fields!
-    const userToSave = {
-      _id: ObjectId(user._id),
-      username: user.username,
-      fullname: user.fullname,
-      isAdmin: user.isAdmin,
-    }
-    const collection = await dbService.getCollection('user')
-    await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
-    return userToSave
-  } catch (err) {
-    logger.error(`cannot update user ${user._id}`, err)
-    throw err
-  }
-}
+// async function update(user) {
+//   try {
+//     // peek only updatable fields!
+//     const userToSave = {
+//       _id: ObjectId(user._id),
+//       username: user.username,
+//       fullname: user.fullname,
+//       isAdmin: user.isAdmin,
+//     }
+//     const collection = await dbService.getCollection('user')
+//     await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
+//     return userToSave
+//   } catch (err) {
+//     logger.error(`cannot update user ${user._id}`, err)
+//     throw err
+//   }
+// }
 
 async function add(user) {
   try {
@@ -84,7 +85,7 @@ async function add(user) {
       username: user.username,
       password: user.password,
       fullname: user.fullname,
-      isAdmin: user.isAdmin || false,
+      imgUrl: user.imgUrl
     }
     const collection = await dbService.getCollection('user')
     await collection.insertOne(userToAdd)

@@ -13,6 +13,7 @@ module.exports = {
 async function getBoards(req, res) {
   try {
     const filterBy = req.query
+    filterBy.currUser = req.session.user;
     const boards = await boardService.query(filterBy)
     res.json(boards)
   } catch (err) {

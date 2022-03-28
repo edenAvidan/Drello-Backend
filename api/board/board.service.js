@@ -13,9 +13,8 @@ module.exports = {
 async function query(filterBy) {
   try {
     const criteria = _buildCriteria(filterBy)
-
     const collection = await dbService.getCollection('board')
-    var boards = await collection.find().toArray()
+    var boards = await collection.find(criteria).toArray()
     return boards //_sort(boards, filterBy);
   } catch (err) {
     logger.error('cannot find boards', err)
@@ -73,19 +72,22 @@ async function update(board) {
 function _buildCriteria(filterBy) {
   const criteria = {}
 
+  // console.log(req.session?.user)
+  console.log(filterBy.currUser);
+  criteria.members = { $elemMatch: { _id: filterBy.currUser._id } }
   // by name
-  const regex = new RegExp(filterBy.name, 'i')
-  criteria.name = { $regex: regex }
+  // const regex = new RegExp(filterBy.name, 'i')
+  // criteria.name = { $regex: regex }
 
-  // filter by inStock
-  if (filterBy.inStock) {
-    criteria.inStock = { $eq: JSON.parse(filterBy.inStock) }
-  }
+  // // filter by inStock
+  // if (filterBy.inStock) {
+  //   criteria.inStock = { $eq: JSON.parse(filterBy.inStock) }
+  // }
 
   // filter by labels
-  if (filterBy.labels?.length) {
-    criteria.labels = { $in: filterBy.labels }
-  }
+  // if (filterBy.labels?.length) {
+
+  // }
 
   return criteria
 }
