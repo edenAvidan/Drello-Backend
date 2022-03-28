@@ -28,7 +28,7 @@ async function getById(boardId) {
     const board = await collection.findOne({ _id: ObjectId(boardId) })
     return board
   } catch (err) {
-    logger.error(`while finding toy ${boardId}`, err)
+    logger.error(`while finding board ${boardId}`, err)
     throw err
   }
 }
@@ -39,7 +39,7 @@ async function remove(boardId) {
     await collection.deleteOne({ _id: ObjectId(boardId) })
     return boardId
   } catch (err) {
-    logger.error(`cannot remove toy ${boardId}`, err)
+    logger.error(`cannot remove board ${boardId}`, err)
     throw err
   }
 }
@@ -51,7 +51,7 @@ async function add(board) {
     const addedBoard = await collection.insertOne(board);
     return board;
   } catch (err) {
-    logger.error('cannot insert toy', err)
+    logger.error('cannot insert board', err)
     throw err
   }
 }
@@ -64,7 +64,7 @@ async function update(board) {
     await collection.updateOne({ _id: boardToSave._id }, { $set: { ...boardToSave } })
     return boardToSave;
   } catch (err) {
-    logger.error(`cannot update toy ${board._id}`, err)
+    logger.error(`cannot update board ${board._id}`, err)
     throw err
   }
 }
