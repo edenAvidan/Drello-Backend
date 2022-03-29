@@ -21,9 +21,9 @@ async function login(req, res) {
 
 async function signup(req, res) {
   try {
-    const { username, password, fullname, imgUrl, type } = req.body
+    const { username, password, fullname, imgUrl } = req.body
 
-    await authService.signup(username, password, fullname, imgUrl, type)
+    await authService.signup(username, password, fullname, imgUrl)
     const user = await authService.login(username, password)
     req.session.user = user
     res.json(user)
