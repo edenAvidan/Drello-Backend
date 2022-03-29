@@ -963,3 +963,146 @@
 3/27/2022, 8:56:35 PM - ERROR - while finding toy undefined | {}
 3/27/2022, 9:16:13 PM - INFO - Server is running on port: 3030
 3/28/2022, 9:10:40 AM - INFO - Server is running on port: 3030
+3/28/2022, 9:23:12 AM - INFO - Server is running on port: 3030
+3/28/2022, 9:25:27 AM - INFO - Server is running on port: 3030
+3/28/2022, 10:10:13 AM - ERROR - while finding toy undefined | {}
+3/28/2022, 10:10:19 AM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:38:02 PM - INFO - Server is running on port: 3030
+3/28/2022, 4:38:08 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:38:15 PM - ERROR - cannot find boards | {}
+3/28/2022, 4:38:30 PM - ERROR - cannot find boards | {}
+3/28/2022, 4:39:10 PM - DEBUG - auth.service - signup with username: dvir, fullname: dvir abrm
+3/28/2022, 4:39:10 PM - DEBUG - auth.service - login with username: dvir
+3/28/2022, 4:40:20 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:40:29 PM - DEBUG - auth.service - signup with username: dan, fullname: dan
+3/28/2022, 4:40:29 PM - DEBUG - auth.service - login with username: dan
+3/28/2022, 4:40:38 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:40:38 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:41:46 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:41:50 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:41:50 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:42:17 PM - DEBUG - auth.service - login with username: dan
+3/28/2022, 4:42:38 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:42:40 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:42:40 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:42:47 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:42:47 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:48:04 PM - INFO - Server is running on port: 3030
+3/28/2022, 4:48:25 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:48:25 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:48:26 PM - ERROR - cannot find boards | {}
+3/28/2022, 4:49:02 PM - DEBUG - auth.service - signup with username: dvir abrm, fullname: dvir
+3/28/2022, 4:49:02 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:49:29 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:49:43 PM - DEBUG - auth.service - signup with username: dudu, fullname: gg
+3/28/2022, 4:49:44 PM - DEBUG - auth.service - login with username: dudu
+3/28/2022, 4:49:52 PM - DEBUG - auth.service - login with username: dvir
+3/28/2022, 4:49:52 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:50:05 PM - DEBUG - auth.service - login with username: dvir
+3/28/2022, 4:50:05 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:50:28 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 4:51:15 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:51:30 PM - INFO - Server is running on port: 3030
+3/28/2022, 4:51:58 PM - DEBUG - auth.service - signup with username: dddd, fullname: ddd
+3/28/2022, 4:51:58 PM - DEBUG - auth.service - login with username: dddd
+3/28/2022, 4:52:14 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:52:22 PM - DEBUG - auth.service - signup with username: ggg, fullname: ggg
+3/28/2022, 4:52:23 PM - DEBUG - auth.service - login with username: ggg
+3/28/2022, 4:52:33 PM - DEBUG - auth.service - login with username: ddd
+3/28/2022, 4:52:33 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:52:52 PM - DEBUG - auth.service - login with username: ddd
+3/28/2022, 4:52:52 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:53:00 PM - DEBUG - auth.service - login with username: dddd
+3/28/2022, 4:53:27 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:53:33 PM - DEBUG - auth.service - login with username: ggg
+3/28/2022, 4:55:05 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:55:10 PM - DEBUG - auth.service - login with username: ddd
+3/28/2022, 4:55:10 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 4:55:16 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 4:55:22 PM - DEBUG - auth.service - login with username: dddd
+3/28/2022, 6:53:50 PM - INFO - Server is running on port: 3030
+3/28/2022, 7:00:34 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:34 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:35 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:35 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:37 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:37 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:38 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:38 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:38 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:38 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:41 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:41 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:41 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:41 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:41 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:41 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:41 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:41 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:42 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:42 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:42 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:42 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:42 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:42 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:42 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:42 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:45 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:45 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:00:59 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:00:59 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:01:13 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:01:13 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 7:01:19 PM - DEBUG - auth.service - signup with username: guest, fullname: guest
+3/28/2022, 7:01:19 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:14:12 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 7:32:20 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 8:53:31 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 8:53:33 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 8:53:33 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 8:53:45 PM - DEBUG - auth.service - signup with username: dvir abrm, fullname: d g
+3/28/2022, 8:53:45 PM - DEBUG - auth.service - login with username: dvir abrm
+3/28/2022, 8:54:03 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 8:54:04 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 8:54:09 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 8:54:27 PM - ERROR - while finding toy undefined | {}
+3/28/2022, 8:54:36 PM - DEBUG - auth.service - login with username: dddd
+3/28/2022, 10:16:31 PM - INFO - Server is running on port: 3030
+3/28/2022, 10:18:46 PM - INFO - Server is running on port: 3030
+3/28/2022, 10:18:56 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 10:22:49 PM - DEBUG - auth.service - login with username: guest
+3/28/2022, 10:27:06 PM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/28/2022, 10:27:06 PM - ERROR - Failed to Login Invalid username or password
+3/28/2022, 10:27:06 PM - DEBUG - auth.service - signup with username: dvir6g6@gmail.com, fullname: Dvir Avraham
+3/28/2022, 10:27:06 PM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/28/2022, 10:30:16 PM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/29/2022, 12:16:05 AM - DEBUG - auth.service - login with username: guest
+3/29/2022, 12:39:07 AM - DEBUG - auth.service - login with username: guest
+3/29/2022, 9:49:44 AM - INFO - Server is running on port: 3030
+3/29/2022, 11:00:38 AM - INFO - Server is running on port: 3030
+3/29/2022, 11:01:00 AM - DEBUG - auth.service - login with username: guest
+3/29/2022, 11:15:45 AM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/29/2022, 11:15:45 AM - ERROR - Failed to Login Error: data and hash arguments required
+3/29/2022, 11:15:45 AM - DEBUG - auth.service - signup with username: dvir6g6@gmail.com, fullname: Dvir Avraham
+3/29/2022, 11:15:45 AM - ERROR - Failed to signup username already exists
+3/29/2022, 11:16:13 AM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/29/2022, 11:16:13 AM - ERROR - Failed to Login Error: data and hash arguments required
+3/29/2022, 11:16:13 AM - DEBUG - auth.service - signup with username: dvir6g6@gmail.com, fullname: Dvir Avraham
+3/29/2022, 11:16:13 AM - ERROR - Failed to signup username already exists
+3/29/2022, 11:17:05 AM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/29/2022, 11:17:05 AM - ERROR - Failed to Login Invalid username or password
+3/29/2022, 11:17:05 AM - DEBUG - auth.service - signup with username: dvir6g6@gmail.com, fullname: Dvir Avraham
+3/29/2022, 11:17:05 AM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/29/2022, 11:39:56 AM - INFO - Server is running on port: 3030
+3/29/2022, 11:42:21 AM - INFO - Server is running on port: 3030
+3/29/2022, 12:08:53 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:10:22 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:11:15 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:18:13 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:20:19 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:21:18 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:24:44 PM - DEBUG - auth.service - signup with username: 1, fullname: 1
+3/29/2022, 12:24:44 PM - DEBUG - auth.service - login with username: 1
+3/29/2022, 12:27:16 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:37:08 PM - INFO - Server is running on port: 3030
+3/29/2022, 12:38:01 PM - INFO - Server is running on port: 3030

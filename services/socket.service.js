@@ -1,3 +1,4 @@
+const boardService = require('../api/board/board.service.js')
 const asyncLocalStorage = require('./als.service');
 const logger = require('./logger.service');
 
@@ -15,7 +16,7 @@ function connectSockets(http, session) {
         socket.on('disconnect', socket => {
             console.log('Someone disconnected')
         })
-        socket.on('chat topic', topic => {
+        socket.on('board topic', topic => {
             if (socket.myTopic === topic) return;
             if (socket.myTopic) {
                 socket.leave(socket.myTopic)
@@ -23,16 +24,17 @@ function connectSockets(http, session) {
             socket.join(topic)
             socket.myTopic = topic
         })
-        socket.on('chat newMsg', msg => {
-            console.log('Emitting Chat msg', msg);
+        socket.on('set board', board => {
+            boardService.update(board)
+            console.log('updated board', board);
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
-            gIo.to(socket.myTopic).emit('chat addMsg', msg)
+            gIo.to(socket.myTopic).emit('board update')
         })
-        socket.on('chat typing', username => {
-            socket.broadcast.to(socket.myTopic).emit('chat typing', username)
-        })
+        // socket.on('chat typing', username => {
+        //     socket.broadcast.to(socket.myTopic).emit('chat typing', username)
+        // })
         socket.on('user-watch', userId => {
             socket.join('watching:' + userId)
         })
