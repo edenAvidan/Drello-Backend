@@ -1,5 +1,7 @@
 const logger = require('../../services/logger.service')
 const boardService = require('./board.service')
+const socketService = require('../../services/socket.service')
+
 
 module.exports = {
   getBoards,
@@ -17,7 +19,7 @@ async function getBoards(req, res) {
     const boards = await boardService.query(filterBy)
     res.json(boards)
   } catch (err) {
-    // logger.error('Failed to get toys', err)
+    logger.error('Failed to get boards', err)
     res.status(500).send({ err: 'Failed to get boards' })
   }
 }
@@ -29,8 +31,8 @@ async function getBoardById(req, res) {
     const board = await boardService.getById(id)
     res.json(board)
   } catch (err) {
-    // logger.error('Failed to get toy', err)
-    res.status(500).send({ err: 'Failed to get board' })
+    logger.error('Failed to get toy', err)
+    res.status(500).send({ err: 'Failed to get board by Id' })
   }
 }
 
@@ -41,7 +43,7 @@ async function addBoard(req, res) {
     const addedBoard = await boardService.add(board);
     res.json(addedBoard)
   } catch (err) {
-    // logger.error('Failed to add toy', err)
+    logger.error('Failed to add toy', err)
     res.status(500).send({ err: 'Failed to add board' })
   }
 }
@@ -51,9 +53,11 @@ async function updateBoard(req, res) {
   try {
     const board = req.body;
     const updatedBoard = await boardService.update(board);
+    socketService.emitTo({ type: 'board update', data: board })
+    console.log(board);
     res.json(updatedBoard);
   } catch (err) {
-    // logger.error('Failed to update toy', err)
+    logger.error('Failed to update toy', err)
     res.status(500).send({ err: 'Failed to update board' });
   }
 }

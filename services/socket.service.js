@@ -35,6 +35,10 @@ function connectSockets(http, session) {
         // socket.on('chat typing', username => {
         //     socket.broadcast.to(socket.myTopic).emit('chat typing', username)
         // })
+        socket.on('notify user tag', async activity => {
+            await emitToUser({ type: 'tag user', data: activity, userId: activity.to._id })
+        })
+
         socket.on('user-watch', userId => {
             socket.join('watching:' + userId)
         })
