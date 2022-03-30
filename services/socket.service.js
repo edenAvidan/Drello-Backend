@@ -27,10 +27,10 @@ function connectSockets(http, session) {
         socket.on('set board', board => {
             boardService.update(board)
             console.log('updated board', board);
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
             gIo.to(socket.myTopic).emit('board update')
+        })
+        socket.on('activity notify', activity => {
+            gIo.emit('notify activity', activity)
         })
         // socket.on('chat typing', username => {
         //     socket.broadcast.to(socket.myTopic).emit('chat typing', username)
