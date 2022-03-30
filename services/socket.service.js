@@ -31,13 +31,16 @@ function connectSockets(http, session) {
             gIo.to(socket.myTopic).emit('board update')
         })
         socket.on('activity notify', async ({ activity, boardMembers }) => {
-            console.log('boardMembers', boardMembers)
-            console.log('boardMembers', activity)
-            if (socket.userId === activity.toMember?._id) {
-                await userService.addActivity(socket.userId, activity)
+            if (activity.toMember?._id) {
+                await userService.addActivity(activity.toMember._id, activity._id)
             }
-            else if (boardMembers.find(member => member._id === socket.userId)) {
-                await userService.addActivity(socket.userId, activity)
+            else {
+                boardMembers.forEach(async member => {
+                    if (member._id !== socket.userId) {
+                        console.log(member);
+                        await userService.addActivity(member._id, activity._id)
+                    }
+                })
             }
             broadcast({ type: 'notify activity', data: activity, userId: activity.byMember._id })
             // gIo.emit('notify activity', activity)

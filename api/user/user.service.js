@@ -51,20 +51,20 @@ async function getByUsername(username) {
   }
 }
 
-async function addActivity(userId, activity) {
+async function addActivity(userId, activityId) {
   try {
     const user = await getById(userId);
     const userToSave = {
-      _id: ObjectId(user._id),
+      _id: user._id,
       username: user.username,
       fullname: user.fullname,
       imgUrl: user.imgUrl,
-      activities: user.activities
+      activityIds: user.activityIds
     }
 
-    userToSave.activities.unshift(activity);
+    userToSave.activityIds.unshift(activityId);
     const collection = await dbService.getCollection('user');
-    await collection.updateOne({ _id: userToSave._id }, { $set: userToSave });
+    await collection.updateOne({ _id: ObjectId(userId) }, { $set: userToSave });
     return userToSave;
   } catch (err) {
     throw err;
@@ -108,7 +108,7 @@ async function add(user) {
       password: user.password,
       fullname: user.fullname,
       imgUrl: user.imgUrl,
-      activities: []
+      activityIds: []
     }
 
     const collection = await dbService.getCollection('user')
