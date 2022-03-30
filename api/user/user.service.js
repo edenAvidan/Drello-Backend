@@ -9,6 +9,7 @@ module.exports = {
   // remove,
   // update,
   add,
+  addActivity
 }
 
 async function query(filterBy = {}) {
@@ -50,6 +51,27 @@ async function getByUsername(username) {
   }
 }
 
+async function addActivity(userId, activity) {
+  try {
+    const user = await getById(userId);
+    const userToSave = {
+      _id: ObjectId(user._id),
+      username: user.username,
+      fullname: user.fullname,
+      imgUrl: user.imgUrl,
+      activities: user.activities
+    }
+
+    userToSave.activities.unshift(activity);
+    const collection = await dbService.getCollection('user');
+    await collection.updateOne({ _id: userToSave._id }, { $set: userToSave });
+    return userToSave;
+  } catch (err) {
+    throw err;
+  }
+
+}
+
 // async function remove(userId) {
 //   try {
 //     const collection = await dbService.getCollection('user')
@@ -85,7 +107,8 @@ async function add(user) {
       username: user.username,
       password: user.password,
       fullname: user.fullname,
-      imgUrl: user.imgUrl
+      imgUrl: user.imgUrl,
+      activities: []
     }
 
     const collection = await dbService.getCollection('user')

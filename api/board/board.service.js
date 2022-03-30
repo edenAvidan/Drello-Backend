@@ -73,7 +73,6 @@ function _buildCriteria(filterBy) {
   const criteria = {}
 
   // console.log(req.session?.user)
-  console.log(filterBy.currUser);
   criteria.members = { $elemMatch: { _id: filterBy.currUser._id } }
   // by name
   // const regex = new RegExp(filterBy.name, 'i')
