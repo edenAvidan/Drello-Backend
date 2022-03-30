@@ -1308,3 +1308,75 @@
 3/30/2022, 4:41:59 PM - DEBUG - Setting (8paSY30l71GGeLblAAAF) socket.userId = 62442877c09749bb9eb1e555
 3/30/2022, 4:42:05 PM - DEBUG - auth.service - login with username: qwer
 3/30/2022, 4:42:05 PM - DEBUG - Setting (6ujFzmQ9GjhuyKMnAAAH) socket.userId = 62445df05ab35c2efa71971d
+3/30/2022, 4:47:55 PM - INFO - Server is running on port: 3030
+3/30/2022, 4:48:02 PM - ERROR - cannot find boards | {}
+3/30/2022, 4:48:02 PM - ERROR - Failed to get boards | {}
+3/30/2022, 4:48:03 PM - ERROR - cannot find boards | {}
+3/30/2022, 4:48:03 PM - ERROR - Failed to get boards | {}
+3/30/2022, 5:22:13 PM - ERROR - cannot find boards | {}
+3/30/2022, 5:22:13 PM - ERROR - Failed to get boards | {}
+3/30/2022, 5:22:13 PM - ERROR - cannot find boards | {}
+3/30/2022, 5:22:13 PM - ERROR - Failed to get boards | {}
+3/30/2022, 5:22:18 PM - ERROR - cannot find boards | {}
+3/30/2022, 5:22:18 PM - ERROR - Failed to get boards | {}
+3/30/2022, 5:22:19 PM - ERROR - cannot find boards | {}
+3/30/2022, 5:22:19 PM - ERROR - Failed to get boards | {}
+3/30/2022, 5:24:17 PM - ERROR - cannot find boards | {}
+3/30/2022, 5:24:17 PM - ERROR - Failed to get boards | {}
+3/30/2022, 5:24:25 PM - ERROR - cannot find boards | {}
+3/30/2022, 5:24:25 PM - ERROR - Failed to get boards | {}
+3/30/2022, 6:04:08 PM - ERROR - cannot find boards | {}
+3/30/2022, 6:04:08 PM - ERROR - Failed to get boards | {}
+3/30/2022, 6:10:16 PM - INFO - Server is running on port: 3030
+3/30/2022, 6:10:29 PM - INFO - Server is running on port: 3030
+3/30/2022, 6:11:37 PM - ERROR - cannot find boards | {}
+3/30/2022, 6:11:37 PM - ERROR - Failed to get boards | {}
+3/30/2022, 6:11:40 PM - ERROR - cannot find boards | {}
+3/30/2022, 6:11:40 PM - ERROR - Failed to get boards | {}
+3/30/2022, 6:11:49 PM - DEBUG - auth.service - login with username: dvir6g6@gmail.com
+3/30/2022, 6:11:49 PM - DEBUG - Setting (qROeuseKETOZDCcQAAAB) socket.userId = 62442877c09749bb9eb1e555
+3/30/2022, 6:11:54 PM - DEBUG - auth.service - login with username: qwer
+3/30/2022, 6:11:54 PM - DEBUG - Setting (tG9wxOx3GXEulgtKAAAD) socket.userId = 62445df05ab35c2efa71971d
+3/30/2022, 6:12:45 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:12:49 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:12:51 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:12:59 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:13:02 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:13:06 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:13:08 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:13:17 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:14:30 PM - DEBUG - broadcast to all but user:  | 62445df05ab35c2efa71971d
+3/30/2022, 6:14:37 PM - DEBUG - broadcast to all but user:  | 62445df05ab35c2efa71971d
+3/30/2022, 6:17:49 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:17:52 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:17:57 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:18:03 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:18:04 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:18:21 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:22:06 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:22:08 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:22:15 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:22:49 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:23:04 PM - DEBUG - auth.service - login with username: guest
+3/30/2022, 6:23:04 PM - ERROR - Failed to Login Invalid username or password
+3/30/2022, 6:23:11 PM - DEBUG - auth.service - login with username: guest
+3/30/2022, 6:23:11 PM - ERROR - Failed to Login Invalid username or password
+3/30/2022, 6:23:31 PM - DEBUG - auth.service - signup with username: yuval, fullname: yuval
+3/30/2022, 6:23:31 PM - DEBUG - auth.service - login with username: yuval
+3/30/2022, 6:23:32 PM - DEBUG - Setting (Te3rQK2hrMpk13CBAAAH) socket.userId = 624475f3846eb1316ebfc07d
+3/30/2022, 6:24:26 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:24:43 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:25:00 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:31:03 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:31:05 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:33:25 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:33:41 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:33:44 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:35:05 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:42:49 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:45:50 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:45:50 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:46:07 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:55:35 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:55:44 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555
+3/30/2022, 6:55:47 PM - DEBUG - broadcast to all but user:  | 62442877c09749bb9eb1e555

@@ -30,7 +30,8 @@ function connectSockets(http, session) {
             gIo.to(socket.myTopic).emit('board update')
         })
         socket.on('activity notify', activity => {
-            gIo.emit('notify activity', activity)
+            broadcast({ type: 'notify activity', data: activity, userId: activity.byMember._id })
+            // gIo.emit('notify activity', activity)
         })
         // socket.on('chat typing', username => {
         //     socket.broadcast.to(socket.myTopic).emit('chat typing', username)
